@@ -1,0 +1,52 @@
+"Geben Sie max. Punkte ein:Eingabe:Geben Sie erreichte Punkte ein:Erreichte Prozent:"
+inc 12
+
+out 3 
+lit 0
+lit 25
+lit 26
+out 2
+
+la 0 50
+la 0 54
+in 0
+sto
+out 3
+
+lit 26
+lit 7
+lit 8
+out 2
+
+lv 0 50
+lit 1
+out 0
+out 3
+
+lit 34
+lit 30
+lit 35
+out 2
+la 0 58
+la 0 62
+in 0 
+sto
+
+la 0 66
+lv 0 58
+lit 100
+mul
+lv 0 50
+div
+sto
+out 3
+
+lit 65
+lit 18
+lit 65
+out 2
+lv 0 66
+lit 1
+out 0
+out 3 # Output far right
+halt

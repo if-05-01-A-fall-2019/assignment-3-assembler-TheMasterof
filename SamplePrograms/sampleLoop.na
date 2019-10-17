@@ -1,0 +1,42 @@
+"Zahl eingeben:"
+inc 12
+
+lit 0
+lit 14
+lit 15
+out 2
+
+la 0 32
+la 0 36
+in 0
+
+la 0 40
+lit 1
+sto
+lv 0 40
+lit 1
+out 0
+out 3
+
+jmp .loop
+
+.loop
+la 0 40
+lv 0 40
+lit 1
+add
+sto
+lv 0 40
+lit 1
+out 0
+out 3
+
+lv 0 32
+lv 0 40
+rel 2
+fjmp .loop
+tjmp .end
+
+.end
+out 3
+halt
